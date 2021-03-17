@@ -8,7 +8,7 @@ environment:
 
 
 executables:
-  flutter_create:
+  cbs_create:
 
 dependencies:
  path: ^1.6.4

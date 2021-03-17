@@ -1,3 +1,5 @@
+![Pub Version](https://img.shields.io/pub/v/cbs_create)
+
 For creating custom flutter project from CBS Architecture
 
 ## Installation
