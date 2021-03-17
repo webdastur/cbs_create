@@ -9,3 +9,7 @@
 ## 1.0.2
 
 - "flutter create ." Command error fixed
+
+## 1.0.3
+
+- Documentation added.

@@ -1,6 +1,6 @@
 name: cbs_create
-description: For creating custom flutter project from CBS Architecture
-version: 1.0.2
+description: For creating custom flutter project from CBS Architecture. CBS Architecture https://github.com/webdastur/cbs_architecture
+version: 1.0.3
 homepage: https://github.com/webdastur/cbs_create
 
 environment:
