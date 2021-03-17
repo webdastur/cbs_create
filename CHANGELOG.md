@@ -5,3 +5,7 @@
 ## 1.0.1
 
 - README updated
+
+## 1.0.2
+
+- "flutter create ." Command error fixed

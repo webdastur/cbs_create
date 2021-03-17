@@ -29,10 +29,10 @@ void main(List<String> arguments) async {
 
     if (results[appname] != null) {
       var sourceCreator = CBSCreate();
-      sourceCreator.create(
+      await sourceCreator.create(
         args: [
-          templateURL, //url
-          results[appname], //'my_donation'
+          templateURL,
+          results[appname],
         ],
         appName: results[appname],
       );

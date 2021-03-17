@@ -19,8 +19,12 @@ class CBSCreate {
       stdout.write(result.stdout);
       stderr.write(result.stderr);
     });
+
     await changeAppName(appName: appName, platforms: [Platform.android, Platform.ios]);
-    await Process.run('flutter', ['create', '.']);
+    await Process.run('flutter', ['create', '.'], workingDirectory: p.current + '\\' + appName, runInShell: true).then((value) {
+      stdout.write(value.stdout);
+      stderr.write(value.stderr);
+    });
   }
 
   void changeFilesImports(String appName, String oldAppName) {
