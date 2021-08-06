@@ -1,6 +1,5 @@
 ## 2.0.0
 
-- Migrated to Null safety
 - Multiple template support added 'Get' and 'Bloc'
 
 ## 1.0.3
