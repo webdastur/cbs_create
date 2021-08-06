@@ -1,15 +1,20 @@
-## 1.0.0
+## 2.0.0
 
-- Initial version, created by Khaydarov Abdulaminkhon
+- Migrated to Null safety
+- Multiple template support added 'Get' and 'Bloc'
 
-## 1.0.1
+## 1.0.3
 
-- README updated
+- Documentation added.
 
 ## 1.0.2
 
 - "flutter create ." Command error fixed
 
-## 1.0.3
+## 1.0.1
 
-- Documentation added.
+- README updated
+
+## 1.0.0
+
+- Initial version, created by Khaydarov Abdulaminkhon

@@ -15,13 +15,16 @@ To update cbs_create, use the same `pub global activate` command.
 
 ## Usage
 
+**t** - for template name get or bloc
+**a** - for app name
+
 ```console
-> cbs_create -a appname
+> cbs_create -a appname -t get or bloc
 ```
 or
 
 ```console
-> pub global run cbs_create -a appname
+> pub global run cbs_create -a appname -t get or bloc
 ```
 
 ```console

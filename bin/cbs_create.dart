@@ -28,12 +28,18 @@ const launcherIcon = 'launcherIcon';
 /// [help] yordam.
 const help = 'help';
 
+/// [template] template nomi
+const String template = 'template';
+
 /// [templateURL] yaratiladigan template manzili.
 const String templateURL = 'https://github.com/webdastur/cbs_architecture';
+
+const String getTemplateURL = 'https://github.com/webdastur/get_architecture';
 
 /// [argParser] console ma'lumotlarini o'qish uchun.
 final argParser = ArgParser()
   ..addOption(appname, abbr: 'a', help: 'Dastur nomini o\'rnatadi.')
+  ..addOption(template, abbr: 't', help: 'Template nomi bloc yoki get')
   ..addFlag(help, abbr: 'h', help: 'Yordam.', negatable: false);
 
 /// Asosiy [main] method.
@@ -42,8 +48,12 @@ void main(List<String> arguments) async {
     final results = argParser.parse(arguments);
     if (results[help] || results.arguments.isEmpty) {
       print(argParser.usage);
-      print(
-          'Ushbu extension CBS Architecture orqali proyekt tuzish uchun yaratildi.\nMuallif: Abdulaminkhon Khaydarov');
+      print('Ushbu extension CBS Architecture orqali proyekt tuzish uchun yaratildi.\nMuallif: Abdulaminkhon Khaydarov');
+      return;
+    }
+
+    if (results[template] == '' || results[template] == null) {
+      print('Iltimos template nomini kiriting!');
       return;
     }
 
@@ -51,7 +61,7 @@ void main(List<String> arguments) async {
       var sourceCreator = CBSCreate();
       await sourceCreator.create(
         args: [
-          templateURL,
+          results[template] == 'bloc' ? templateURL : getTemplateURL,
           results[appname],
         ],
         appName: results[appname],
